@@ -1,4 +1,25 @@
 body{
-    height: 5000px;
     padding-top: 76.2px;
+}
+.w-ico{ /*controla a altura dos ícones*/
+    height: 100px;
+}
+
+.banner2{/*segundo banner*/
+    background-image: url(../img/bg-quote.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (width < 768px){
+    .banner2 p{
+        font-size: 2.0rem;
+    }
+    body{
+        padding-top: 0px;
+    }
+    .fixed-top{
+        position: relative;
+    }
 }
