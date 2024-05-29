@@ -12,8 +12,35 @@
     <title>Caravan</title>
 </head>
 <body>
+    <!--Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">ENTRE NA SUA CONTA</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <div class="form-text">Esqueceu sua senha? <a class="text-decoration-none" href="">Clique aqui</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Modal -->
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light px-4 fixed-top shadow-sm p-3 bg-body-tertiary">
+    <nav class="navbar navbar-expand-md navbar-primary bg-light px-4 fixed-top shadow-sm p-3">
         <a href="index.html" class="navbar-brand"><img src="img/caravan.svg" alt="Caravan"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +65,7 @@
                     <a href="contato.html" class="nav-link">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link">Login</a>
                 </li>
                 <li class="btn btn-outline-primary ms-md-3">
                     <a href="inscricao.html" class="nav-link">Inscreva-se</a>
@@ -47,10 +74,10 @@
         </div>
     </nav>
     <!-- Fim Navbar -->
-
+    
     <!--Banner1-->
     <section class="container-fluid">
-        <div class="row bg-dark text-white align-items-center">
+        <div class="row bg-dark text-white">
             <div class="col-lg-7 p-0">
                 <div id="carouselCidade" class="carousel slide">
                     <div class="carousel-indicators">
@@ -91,7 +118,7 @@
                     </button>
                   </div>
             </div>
-            <div class="col-lg-5 p-4">
+            <div class="col-lg-5 p-4 align-self-center">
                 <h1 class="display-4">Realize a viagem dos seus sonhos</h1>
                 <p class="lead">Conheça os melhores lugares do mundo com a Caravan</p>
                 <div class="input-group mb-3 input-group-lg">
@@ -163,7 +190,7 @@
           <h2 class="display-4 text-primary">Perguntas frequentes!</h2>
         </div>
         <div class="row justify-content-center">
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header py-2">
@@ -224,6 +251,50 @@
         </div>
     </section>
     <!-- Fim FAQ -->
+
+    <!--Footer-->
+    <footer class="bg-dark text-white">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">PÁGINAS</h4>
+            <ul class="list-unstyled">
+              <li><a class=" text-decoration-none" href="planos.html">Planos</a></li>
+              <li><a class=" text-decoration-none" href="contato.html">Contato</a></li>
+              <li><a class=" text-decoration-none" href="inscricao.html">Inscreva-se</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCAIS</h4>
+            <ul class="list-unstyled">
+              <li><a class=" text-decoration-none" href="locais.html">Califórnia</a></li>
+              <li><a class=" text-decoration-none" href="locais.html">Paris</a></li>
+              <li><a class=" text-decoration-none" href="locais.html">Dublin</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">DADOS PARA CONTATO</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>contato@caravan.com</li>
+              <li>55 3272-1919</li>
+              <li>De seg à sex, das 08:00 às 18:00</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">REDES SOCIAIS</h4>
+            <ul class="list-unstyled">
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" id="btn-sociais" href="#">Instagram</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" id="btn-sociais" href="#">Facebook</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" id="btn-sociais" href="#">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-1">
+        <p class="mb-0">Caravan 2017. Todos os direitos reservados</p>
+      </div>
+    </footer>
+    <!-- Fim Footer -->
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
