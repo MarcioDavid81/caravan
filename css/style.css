@@ -18,8 +18,9 @@ body{
     transform: scale(1.1);
 }
 #btn-sociais{
-    max-width: 140px;
+    width: 150px;
 }
+
 
 
 @media (width < 768px){
